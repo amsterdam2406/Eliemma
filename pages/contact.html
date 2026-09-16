@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | EliEmma Health</title>
+<meta name="description" content="Contact EliEmma Health — request home health support, training, clinical research or partnerships.">
+<meta property="og:title" content="Contact | EliEmma Health">
+<meta property="og:description" content="Contact EliEmma Health — request home health support, training, clinical research or partnerships.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/images/og-image.jpg">
+<link rel="icon" type="image/png" href="../assets/images/favicon.png?v=2">
+<link rel="apple-touch-icon" href="../assets/images/favicon.png?v=2">
+<meta name="theme-color" content="#07356f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand" aria-label="EliEmma Health — home"><img src="../assets/images/logo.png" alt="EliEmma Health logo" width="190" height="60"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Customer Portal</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container reveal in">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; Contact</nav>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you — reach out and our team will respond promptly.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-3" style="margin-bottom:3.5rem">
+      <div class="info-card reveal"><div class="icon-badge"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.2c0 5.1-8 10.3-8 10.3S4 15.3 4 10.2a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></div><div><h3>Visit Us</h3><p>1 Olabisi Onitiri Close, United Estate,<br>Sangotedo, Lagos State, Nigeria</p></div></div>
+      <div class="info-card reveal"><div class="icon-badge"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 4.5 5.5 5.8c-.8.6-1.1 1.6-.7 2.5 1.8 4.5 4.7 7.4 9.2 9.2.9.4 1.9.1 2.5-.7l1.3-1.7-3.1-2.4-1.5 1.1a12.5 12.5 0 0 1-4.9-4.9l1.1-1.5-2.2-2.9Z"/></svg></div><div><h3>Call or WhatsApp</h3><p><a href="tel:+2349133972821">0913 397 2821</a><br><a href="tel:+2349014912731">0901 491 2731</a><br><a href="https://wa.me/2349133972821" rel="noopener">WhatsApp chat →</a></p></div></div>
+      <div class="info-card reveal"><div class="icon-badge"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7 7.5 5.2L19.5 7"/></svg></div><div><h3>Email</h3><p><a href="mailto:eehealth@eliemma.com">eehealth@eliemma.com</a></p></div></div>
+    </div>
+
+    <div class="grid-2" style="align-items:start">
+      <div class="form-card reveal reveal-left">
+        <h2 style="font-size:1.5rem;margin-bottom:.4rem">Send an Enquiry</h2>
+        <p style="color:var(--muted);font-size:.95rem">Fields marked * are required.</p>
+        <form id="contactForm" action="https://formspree.io/f/mppwaere" method="POST" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="name">First and Last Name *</label><input id="name" name="name" autocomplete="name" required><p class="field-error">Please enter your full name.</p></div>
+            <div class="field"><label for="email">Email Address *</label><input id="email" name="email" type="email" autocomplete="email" required><p class="field-error">Please enter a valid email address.</p></div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <div class="form-row">
+              <select id="country" name="country_code" required aria-label="Country code">
+                <option value="+234">🇳🇬 Nigeria (+234)</option><option value="+1">🇺🇸 USA (+1)</option>
+                <option value="+44">🇬🇧 UK (+44)</option><option value="+233">🇬🇭 Ghana (+233)</option>
+                <option value="+254">🇰🇪 Kenya (+254)</option><option value="+27">🇿🇦 South Africa (+27)</option>
+              </select>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]{7,15}" placeholder="e.g. 8012345678" required>
+            </div>
+            <p class="field-error">Please enter a valid phone number (digits only).</p>
+          </div>
+          <div class="field">
+            <label for="inquiry">Inquiry Type *</label>
+            <select id="inquiry" name="inquiry_type" required>
+              <option value="">— Select —</option>
+              <option>Home health support</option><option>Temporary recovery</option>
+              <option>Training</option><option>Clinical research</option>
+              <option>Investment and Partnership</option><option>Other</option>
+            </select>
+            <p class="field-error">Please choose an inquiry type.</p>
+          </div>
+          <div class="field">
+            <label for="prefer">Preferred Contact Method *</label>
+            <select id="prefer" name="preferred_contact" required>
+              <option value="">— Select —</option><option>Email</option><option>Text</option><option>Call</option><option>WhatsApp</option>
+            </select>
+            <p class="field-error">Please choose how you'd like us to reach you.</p>
+          </div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell us how we can help…"></textarea></div>
+          <div class="field consent">
+            <input id="consent" type="checkbox" required>
+            <label for="consent">I agree to EliEmma Health storing my enquiry details so the team can respond to me. *</label>
+          </div>
+          <p class="field-error" style="margin-top:.3rem">Please accept before submitting.</p>
+          <button type="submit" class="btn btn-primary" style="margin-top:1.4rem;width:100%;justify-content:center">Submit</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="reveal reveal-right">
+        <div class="map-frame">
+          <iframe title="Map showing EliEmma Health in Sangotedo, Lagos" src="https://www.google.com/maps?q=1%20Olabisi%20Onitiri%20Close%2C%20United%20Estate%2C%20Sangotedo%2C%20Lagos%2C%20Nigeria&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="card" style="margin-top:1.5rem;text-align:center">
+          <h3>Prefer to talk right away?</h3>
+          <p style="margin:.7rem 0 1.2rem">Tap the green button and chat with our team on WhatsApp instantly.</p>
+          <a href="https://wa.me/2349133972821" class="btn btn-green" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-nav-col">
+        <span class="footer-label">Explore EliEmma</span>
+        <ul class="f-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-mid">
+        <img src="../assets/images/logo-transparent.png" alt="EliEmma Health logo" width="180" height="57">
+        <p>Compassionate, professional home healthcare across Lagos, Nigeria.</p>
+        <span class="footer-label">Follow our journey</span>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@eliemmahealth" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2.2 1.8 3.7 4.1 3.9v3c-1.6 0-3-.5-4.1-1.3v6.4c0 3.9-2.7 6.5-6.3 6.5-3.4 0-6-2.4-6-5.7 0-3.4 2.9-5.9 6.5-5.6v3.1c-1.8-.4-3.4.7-3.4 2.5 0 1.5 1.2 2.6 2.8 2.6 1.8 0 3.1-1.3 3.1-3.5V3h3.3z"/></svg></a>
+          <a href="#" aria-label="Instagram (link pending)"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.7 1.6 4.8 4.8.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.5 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.7-1.6-4.8-4.8C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.5 4 4 2.5 7.2 2.4 8.4 2.3 8.8 2.2 12 2.2zm0 4.6a5.2 5.2 0 100 10.4 5.2 5.2 0 000-10.4zm0 8.6a3.4 3.4 0 110-6.8 3.4 3.4 0 010 6.8zm5.4-8.9a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+          <a href="#" aria-label="Facebook (link pending)"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.8h2.6l.4-3h-3V8.3c0-.9.3-1.5 1.6-1.5h1.5V4.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg></a>
+          <a href="#" aria-label="Twitter / X (link pending)"><svg viewBox="0 0 24 24"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.3l-4.9-6.4L5 21H1.9l7.3-8.3L2.2 3h6.4l4.4 5.9L17.5 3zm-1.1 16.1h1.7L7.7 4.7H5.9l10.5 14.4z"/></svg></a>
+          <a href="https://wa.me/2349133972821" aria-label="Chat with us on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 2.6 1 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <span class="footer-label">Care that moves with you</span>
+        <blockquote class="footer-quote"><p>“Care at home. Confidence in caregiving. Better health for every family.”</p><cite>— EliEmma Health</cite></blockquote>
+        <p class="footer-services">Home health · caregiver education · clinical research</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; <span data-year></span> EliEmma Health. All rights reserved.</span>
+      <span>Compassionate care · Professional support · Healthier communities</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/2349133972821" aria-label="Chat with EliEmma Health on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm4.6 12.1c-.2.6-1.2 1.1-1.7 1.2-.5 0-.5.3-3.1-.7-2.7-1.1-4.4-3.7-4.5-3.9-.2-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4-.1.6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5l-.4.5c-.1.2-.4.3-.1.7a6.7 6.7 0 003.3 2.9c.2.1.4.1.5-.1.1-.2.6-.7.8-1 .2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.3.1.5.2.6.3.1.1.1.6-.1 1.2z"/></svg></a>
+<script src="../js/main.js"></script>
+</body>
+</html>

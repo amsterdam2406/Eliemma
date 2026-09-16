@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 205" role="img" aria-labelledby="title desc">
+  <title id="title">EliEmma Health mark</title>
+  <desc id="desc">Two people forming a supportive health care mark</desc>
+  <circle cx="76" cy="37" r="24" fill="#0754b8"/>
+  <circle cx="164" cy="37" r="24" fill="#63bc43"/>
+  <path fill="#0754b8" d="M45 73c-18 8-20 27-12 49 9 26 24 43 49 50 19 5 35 2 49-8-17-17-24-37-35-61-9-20-27-38-51-30Z"/>
+  <path fill="#63bc43" d="M195 73c18 8 20 27 12 49-9 26-24 43-49 50-27 8-57 1-78-13 20 3 37-1 51-14 17-15 25-38 35-61 9-20 27-38 51-30Z"/>
+</svg>

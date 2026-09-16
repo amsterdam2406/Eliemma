@@ -1,0 +1,2 @@
+Drop client video files here (e.g. company-intro.mp4).
+See README.md section 5 for specs and embed instructions.

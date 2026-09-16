@@ -1,0 +1,206 @@
+/*
+  Formspree submission notification template styles
+  Paste this into Formspree's CSS template editor.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef3f8;
+  color: #18304f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-shell {
+  width: 100%;
+  background: #eef3f8;
+}
+
+.email-padding {
+  padding: 32px 14px;
+}
+
+.email-card {
+  max-width: 640px;
+  background: #ffffff;
+  border: 1px solid #dce6f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(7, 53, 111, .08);
+}
+
+.brand-header {
+  padding: 26px 24px 22px;
+  background: #f9fbfd;
+  border-bottom: 5px solid #67bc45;
+}
+
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.brand-rule {
+  width: 46px;
+  height: 4px;
+  margin: 18px auto 12px;
+  border-radius: 4px;
+  background: #2173ff;
+}
+
+.brand-kicker,
+.eyebrow,
+.message-label {
+  margin: 0;
+  color: #56708f;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.email-content {
+  padding: 34px 38px 20px;
+}
+
+h1 {
+  margin: 8px 0 12px;
+  color: #07356f;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.intro {
+  margin: 0 0 24px;
+  color: #526984;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.details-table {
+  border: 1px solid #e1eaf2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.details-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e8eef4;
+  font-size: 14px;
+  line-height: 1.4;
+  vertical-align: top;
+}
+
+.details-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.label {
+  width: 34%;
+  color: #607995;
+  font-weight: bold;
+}
+
+.value {
+  color: #18304f;
+}
+
+a {
+  color: #075cc8;
+  text-decoration: none;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #e7f5df;
+  color: #28751a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.message-label {
+  margin: 26px 0 8px;
+}
+
+.message-box {
+  padding: 16px;
+  border-left: 4px solid #2173ff;
+  border-radius: 0 8px 8px 0;
+  background: #f4f8fc;
+  color: #29425f;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.reply-note {
+  margin: 24px 0 0;
+  color: #526984;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.watermark-area {
+  padding: 8px 0 2px;
+}
+
+.watermark-logo {
+  display: block;
+  width: 190px;
+  height: auto;
+  opacity: .07;
+}
+
+.email-footer {
+  padding: 18px 24px 24px;
+  background: #07356f;
+  color: #dbe9f8;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.email-footer p {
+  margin: 4px 0;
+}
+
+.email-footer strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.email-footer a {
+  color: #b9e7a5;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .email-padding {
+    padding: 12px 6px;
+  }
+
+  .email-content {
+    padding: 26px 20px 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .details-table td {
+    display: block;
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  .details-table .label {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .details-table .value {
+    padding-top: 2px;
+  }
+}

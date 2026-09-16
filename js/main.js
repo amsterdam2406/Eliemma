@@ -261,7 +261,9 @@
         var payload = new FormData(form);
         var email = form.querySelector("#email");
         if (email && email.value) payload.set("_replyto", email.value);
-        payload.set("_subject", "EliEmma Health enquiry received");
+        var inquiry = form.querySelector("#inquiry");
+        var inquiryLabel = inquiry && inquiry.value ? inquiry.value : "Website";
+        payload.set("_subject", "New " + inquiryLabel + " enquiry — EliEmma Health");
         payload.set("_autoresponse", "Thank you for contacting EliEmma Health. We have received your enquiry and our support team will reach out to you as soon as possible.");
         fetch(action, { method: "POST", body: payload, headers: { Accept: "application/json" } })
           .then(function (response) {

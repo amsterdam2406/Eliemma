@@ -1,0 +1,53 @@
+<!--
+  Formspree submission notification template
+  Paste this into Formspree's HTML template editor.
+  The logo URL assumes this public repository is available on GitHub.
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="email-shell">
+  <tr>
+    <td align="center" class="email-padding">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="email-card">
+        <tr>
+          <td class="brand-header" align="center">
+            <img src="https://raw.githubusercontent.com/amsterdam2406/Eliemma/main/assets/images/logo.png" width="150" alt="EliEmma Health" class="brand-logo">
+            <div class="brand-rule"></div>
+            <p class="brand-kicker">NEW WEBSITE ENQUIRY</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="email-content">
+            <p class="eyebrow">EliEmma Health contact form</p>
+            <h1>New enquiry received</h1>
+            <p class="intro">A new enquiry has arrived through the EliEmma Health website. Review the details below and reply directly to the sender.</p>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="details-table">
+              <tr><td class="label">Name</td><td class="value">{{ name }}</td></tr>
+              <tr><td class="label">Email</td><td class="value"><a href="mailto:{{ email }}">{{ email }}</a></td></tr>
+              <tr><td class="label">Phone</td><td class="value">{{ country_code }} {{ phone }}</td></tr>
+              <tr><td class="label">Inquiry</td><td class="value"><span class="tag">{{ inquiry_type }}</span></td></tr>
+              <tr><td class="label">Preferred contact</td><td class="value">{{ preferred_contact }}</td></tr>
+              <tr><td class="label">Received</td><td class="value">{{ _time }}</td></tr>
+            </table>
+
+            <p class="message-label">Message</p>
+            <div class="message-box">{{ message }}</div>
+
+            <p class="reply-note">Reply directly to this email to respond to <strong>{{ name }}</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="watermark-area" align="center">
+            <img src="https://raw.githubusercontent.com/amsterdam2406/Eliemma/main/assets/images/logo.png" width="190" alt="" aria-hidden="true" class="watermark-logo">
+          </td>
+        </tr>
+        <tr>
+          <td class="email-footer" align="center">
+            <p><strong>EliEmma Health</strong><br>Compassion at the core of care</p>
+            <p>Submitted from {{ _host }}</p>
+            <p><a href="{{ _unsubscribe }}">Unsubscribe from these notifications</a></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

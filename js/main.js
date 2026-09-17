@@ -128,6 +128,17 @@
     counters.forEach(animateCount);
   }
 
+  /* Start the care animation quietly at half speed; muted autoplay is required
+     by browser playback policies, while controls still let visitors opt in to sound. */
+  document.querySelectorAll(".video-player").forEach(function (video) {
+    var setHalfSpeed = function () {
+      video.defaultPlaybackRate = 0.5;
+      video.playbackRate = 0.5;
+    };
+    setHalfSpeed();
+    video.addEventListener("loadedmetadata", setHalfSpeed);
+  });
+
   /* Accessible, touch-friendly carousels with gentle autoplay */
   document.querySelectorAll("[data-carousel]").forEach(function (root) {
     var track = root.querySelector(".carousel-track");

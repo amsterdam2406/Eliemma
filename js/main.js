@@ -167,7 +167,9 @@
 
     function go(nextIndex) {
       index = (nextIndex + slides.length) % slides.length;
-      track.style.transform = "translate3d(-" + index * 100 + "%,0,0)";
+      if (!root.classList.contains("hero-background-carousel")) {
+        track.style.transform = "translate3d(-" + index * 100 + "%,0,0)";
+      }
       slides.forEach(function (slide, n) {
         slide.setAttribute("aria-hidden", n === index ? "false" : "true");
       });

@@ -996,3 +996,100 @@ p,li{font-weight:600}
 
 /* Right-to-left ticker: duplicate messages enter from the right and leave on the left. */
 @keyframes hero-newsletter-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- EliEmma brand and accessibility finish ----------
+   Keep the visual system tied to the blue and green in the logo. */
+:root{
+  --blue:#004aad;
+  --blue-dark:#05469d;
+  --blue-light:#2173ff;
+  --green:#67bc45;
+  --green-dark:#4f9a33;
+  --bg:#f4f7f9;
+  --surface:#fff;
+  --surface-alt:#edf4f7;
+  --ink:#172331;
+  --muted:#526170;
+  --border:#d6e0e6;
+  --gold:var(--blue);
+  --gold-bright:#9bd57d;
+  --gold-deep:var(--blue-dark);
+}
+
+body{font-size:1.03rem;line-height:1.7;background:var(--bg);color:var(--ink)}
+p,li{font-weight:500}
+h1,h2,h3,h4{letter-spacing:-.02em}
+a{color:var(--blue)}
+.site-header{box-shadow:0 1px 0 rgba(7,84,184,.2),0 8px 24px rgba(7,53,111,.08)}
+.nav-links a::after{background:var(--green)}
+.nav-links a[aria-current="page"]{color:var(--blue-dark)}
+.btn{border-radius:7px}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 16px rgba(7,84,184,.2)}
+.btn-primary:hover{background:var(--blue-dark);color:#fff}
+.btn-green{background:var(--green);color:#12320c}
+.btn-green:hover{background:var(--green-dark);color:#fff}
+.btn-outline{border:1px solid var(--blue);color:var(--blue);background:transparent}
+.btn-outline:hover{background:var(--blue);color:#fff}
+.section{padding-block:clamp(4rem,7vw,5.5rem)}
+.section-alt{background:var(--surface)}
+.section-head h2{color:var(--blue-dark)}
+.eyebrow{color:var(--green-dark)}
+.card,.info-card,.form-card,.legal{border-radius:10px;box-shadow:0 8px 24px rgba(7,53,111,.06)}
+.card:hover,.news-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(7,53,111,.1)}
+
+/* Icons are part of the content hierarchy, not decorative containers. */
+.icon-badge,.icon-badge.green,.icon-badge.compact-icon,
+.step-card .step-icon,.info-card .icon-badge{
+  width:auto;height:auto;min-width:0;margin:0 0 1rem;padding:0;border:0;border-radius:0;
+  background:transparent;color:var(--blue);box-shadow:none;display:flex;justify-content:flex-start;
+}
+.icon-badge svg{width:2rem;height:2rem}
+.info-card .icon-badge{margin:0;width:2rem;flex:none}
+.info-card .icon-badge svg{width:1.65rem;height:1.65rem}
+.step-card .step-icon{margin-inline:auto;margin-bottom:1rem}
+.step-card:hover .step-icon{transform:none;box-shadow:none}
+.card h3,.info-card h3{color:var(--blue-dark)}
+.card .btn-outline{margin-top:1.2rem}
+
+/* Keep home-page service and process icons visually anchored above their
+   headings, with a clear top-centred reading order. */
+.services-overview .card,
+.process-section .step-card{text-align:center}
+.services-overview .card .icon-badge,
+.process-section .step-card .step-icon{
+  justify-content:center;
+  align-items:center;
+  margin-inline:auto;
+}
+
+/* About: one clear introduction followed by three concise content blocks. */
+.about-overview{background:var(--surface-alt)}
+.about-overview-head{max-width:780px;margin:0 auto clamp(2rem,5vw,3.5rem);text-align:center}
+.about-overview-head h1{margin-top:.45rem;color:var(--blue-dark);font-size:clamp(1.9rem,4vw,3rem);line-height:1.2}
+.about-block-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;align-items:stretch}
+.about-block{padding:1.65rem 1.5rem;border-top:4px solid var(--green);background:var(--surface);box-shadow:0 8px 24px rgba(7,53,111,.06)}
+.about-block .eyebrow{margin-bottom:.45rem}
+.about-block h2{margin-bottom:.65rem;color:var(--blue-dark);font-size:1.2rem;line-height:1.35}
+.about-block p{color:var(--muted)}
+
+.site-footer{background:#07356f;border-top:2px solid var(--green);color:#dbe8f2}
+.site-footer::before{background:linear-gradient(90deg,transparent,var(--green),#b8e99e,var(--green),transparent)}
+.site-footer::after{opacity:.1}
+.footer-label{color:#b8e99e}
+.f-menu a{color:#dbe8f2}
+.f-menu a::before{background:var(--green)}
+.f-menu a:hover,.footer-bottom a:hover{color:#b8e99e}
+.footer-mid p,.footer-right p,.footer-bottom{color:#b9cad6}
+.footer-quote{border-left-color:var(--green);background:rgba(255,255,255,.06)}
+.footer-quote cite{color:#b8e99e}
+.socials a{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#dbe8f2}
+.socials a:hover,.socials a:focus-visible{background:var(--green);border-color:var(--green);color:#12320c;box-shadow:none}
+.wa-float{background:#159447;border-color:#fff;box-shadow:0 10px 24px rgba(7,53,111,.25),0 0 0 4px rgba(103,188,69,.18)}
+
+@media(max-width:860px){
+  .about-block-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .section{padding-block:3.5rem}
+  .about-block{padding:1.25rem 1.2rem}
+}

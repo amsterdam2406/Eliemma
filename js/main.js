@@ -15,6 +15,16 @@
     link.addEventListener("click", function (e) { e.preventDefault(); });
   });
 
+  /* Keep every existing WhatsApp link on the configured number while
+     opening a ready-to-send website enquiry on mobile and WhatsApp Web. */
+  var whatsappMessage = "Hello EliEmma Health, I found you through your website and would like to learn more about your healthcare services. Please could you provide more information? Thank you.";
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (link) {
+    var href = link.getAttribute("href") || "";
+    if (href.indexOf("text=") === -1) {
+      link.setAttribute("href", href + (href.indexOf("?") === -1 ? "?" : "&") + "text=" + encodeURIComponent(whatsappMessage));
+    }
+  });
+
   /* Responsive navigation drawer */
   var ham = document.querySelector(".hamburger");
   var links = document.querySelector(".nav-links");

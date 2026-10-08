@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | EliEmma Health</title>
+<meta name="description" content="Apply to join the EliEmma Health team of compassionate healthcare professionals and coordinators.">
+<link rel="icon" type="image/png" href="../assets/images/logo-transparent.png?v=3">
+<meta name="theme-color" content="#07356f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand" aria-label="EliEmma Health — home"><img src="../assets/images/logo.png" alt="EliEmma Health logo" width="190" height="60"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main" class="application-page">
+  <section class="page-hero application-hero application-career-hero">
+    <div class="container reveal in">
+      <span class="eyebrow page-hero-eyebrow">Careers · Apply</span>
+      <h1>Join a team that puts people first</h1>
+      <p>Tell us about your experience, skills and the meaningful contribution you would like to make at EliEmma Health.</p>
+      <div class="application-hero-points" aria-label="Career application benefits"><span>Healthcare roles with purpose</span><span>Professional growth opportunities</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container application-layout">
+      <aside class="application-intro reveal reveal-left">
+        <span class="eyebrow" style="color:#bfe3a8">Work with purpose</span>
+        <h2>Bring your care, skill and perspective</h2>
+        <p>We welcome applications from nurses, caregivers, coordinators and healthcare professionals who want to make a real and meaningful difference to people’s lives.</p>
+        <ul>
+          <li>Compassionate, respectful working culture</li>
+          <li>Opportunities across care and coordination</li>
+          <li>Applications reviewed by the EliEmma team</li>
+        </ul>
+      </aside>
+
+      <div class="application-form-card reveal reveal-right">
+        <h2>Career Application</h2>
+        <p>Complete the application carefully. Required fields are marked *.</p>
+        <form id="careerForm" class="application-form" data-formspree-form action="https://formspree.io/f/mppqagbw" method="POST" enctype="multipart/form-data" novalidate data-subject="New Career application — EliEmma Health" data-autoresponse="Thank you for applying to EliEmma Health. We have received your application and will review the information provided. Our team will contact you if your experience matches a current or future opportunity." data-success="Your career application has been submitted successfully. EliEmma Health will review the information you provided and contact you with the next steps if your experience matches an opportunity.">
+          <section class="application-section">
+            <div class="application-section-title"><h3>Personal information</h3><p>How can we contact you?</p></div>
+            <div class="field-grid">
+              <div class="field"><label for="career-name">First and last name (surname) *</label><input id="career-name" name="name" autocomplete="name" required><p class="field-error">Please enter your full name.</p></div>
+              <div class="field"><label for="career-email">Email address *</label><input id="career-email" name="email" type="email" autocomplete="email" required><p class="field-error">Please enter a valid email address.</p></div>
+              <div class="field full"><label for="career-address">Address *</label><input id="career-address" name="address" autocomplete="street-address" required><p class="field-error">Please enter your address.</p></div>
+              <div class="field"><label for="career-phone">Phone *</label><input id="career-phone" name="phone" type="tel" autocomplete="tel" required><p class="field-error">Please enter a phone number.</p></div>
+            </div>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Employment history</h3><p>Add each relevant role.</p></div>
+            <div id="employment-list" class="repeatable-list">
+              <div class="repeatable-item">
+                <button type="button" class="remove-repeatable" hidden aria-label="Remove employment record">×</button>
+                <div class="field-grid">
+                  <div class="field"><label>Job title *</label><input name="employment_title[]" required><p class="field-error">Please enter a job title.</p></div>
+                  <div class="field"><label>Company *</label><input name="employment_company[]" required><p class="field-error">Please enter the company name.</p></div>
+                  <div class="field"><label>Start date *</label><input name="employment_start[]" type="date" required><p class="field-error">Please enter a start date.</p></div>
+                  <div class="field"><label>End date</label><input name="employment_end[]" type="date"></div>
+                  <div class="field full"><label>Responsibilities *</label><textarea name="employment_responsibility[]" rows="3" required placeholder="Summarise your main responsibilities."></textarea><p class="field-error">Please describe your responsibilities.</p></div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm add-repeatable" data-add-repeatable="employment-list">+ Add another employment record</button>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Education</h3><p>List your relevant qualifications.</p></div>
+            <div id="education-list" class="repeatable-list">
+              <div class="repeatable-item">
+                <button type="button" class="remove-repeatable" hidden aria-label="Remove education record">×</button>
+                <div class="field-grid">
+                  <div class="field"><label>Degree or qualification *</label><input name="education_degree[]" required><p class="field-error">Please enter a qualification.</p></div>
+                  <div class="field"><label>School name *</label><input name="education_school[]" required><p class="field-error">Please enter the school name.</p></div>
+                  <div class="field"><label>Graduation month and year *</label><input name="education_graduation[]" type="month" required><p class="field-error">Please enter the graduation date.</p></div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm add-repeatable" data-add-repeatable="education-list">+ Add another qualification</button>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Position and reference</h3><p>Help us understand your next step.</p></div>
+            <div class="field-grid">
+              <div class="field"><label for="position-title">Position you are applying for *</label><input id="position-title" name="position_applying_for" required><p class="field-error">Please enter the position.</p></div>
+              <div class="field"><label for="available-start">When can you start? *</label><input id="available-start" name="available_start_date" type="date" required><p class="field-error">Please enter your availability date.</p></div>
+              <div class="field"><label for="reference-name">Reference name *</label><input id="reference-name" name="reference_name" required><p class="field-error">Please enter a reference name.</p></div>
+              <div class="field"><label for="reference-relation">Relationship *</label><input id="reference-relation" name="reference_relationship" required><p class="field-error">Please describe the relationship.</p></div>
+              <div class="field"><label for="reference-phone">Reference phone *</label><input id="reference-phone" name="reference_phone" type="tel" required><p class="field-error">Please enter a reference phone number.</p></div>
+              <div class="field"><label for="reference-email">Reference email *</label><input id="reference-email" name="reference_email" type="email" required><p class="field-error">Please enter a valid reference email.</p></div>
+            </div>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Documents</h3><p>Attach your CV and supporting documents.</p></div>
+            <div id="documents-list" class="upload-list">
+              <div class="upload-row"><label class="sr-only" for="cv-upload">CV</label><input id="cv-upload" name="attachments" type="file" accept=".pdf,.doc,.docx" multiple required><button type="button" class="remove-file" hidden aria-label="Remove document">×</button></div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm add-repeatable" data-add-file="documents-list">+ Add another document</button>
+            <p class="application-note">Please attach a CV. You may add other relevant documents. Formspree file uploads are subject to your account plan and file limits.</p>
+          </section>
+
+          <div class="field consent"><input id="career-consent" name="background_medical_consent" value="yes" type="checkbox" required><label for="career-consent">I consent to EliEmma Health carrying out appropriate background and medical checks as part of the recruitment process. *</label></div>
+          <p class="field-error" style="margin-top:.3rem">Please provide consent before submitting.</p>
+          <div class="application-submit"><button type="submit" class="btn btn-primary">Submit application</button></div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-mid">
+        <img src="../assets/images/logo-transparent.png" alt="EliEmma Health logo" width="180" height="57">
+        <p>Compassionate, professional home healthcare across Lagos, Nigeria.</p>
+        <span class="footer-label">Follow our journey</span>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@eliemmahealth" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2.2 1.8 3.7 4.1 3.9v3c-1.6 0-3-.5-4.1-1.3v6.4c0 3.9-2.7 6.5-6.3 6.5-3.4 0-6-2.4-6-5.7 0-3.4 2.9-5.9 6.5-5.6v3.1c-1.8-.4-3.4.7-3.4 2.5 0 1.5 1.2 2.6 2.8 2.6 1.8 0 3.1-1.3 3.1-3.5V3h3.3z"/></svg></a>
+          <a href="https://www.instagram.com/eliemmahealth/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.7 1.6 4.8 4.8.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.5 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.7-1.6-4.8-4.8C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.5 4 4 2.5 7.2 2.4 8.4 2.3 8.8 2.2 12 2.2z"/></svg></a>
+          <a href="https://wa.me/2349133972821" aria-label="Chat with us on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-right"><span class="footer-label">Care that moves with you</span><blockquote class="footer-quote"><p>“Care at home. Confidence in caregiving. Better health for every family.”</p><cite>— EliEmma Health</cite></blockquote><p class="footer-services">Home health · caregiver education · clinical research</p></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copyright">&copy; <span data-year></span> EliEmma Health. All rights reserved.</span><span>Compassionate care · Professional support · Healthier communities</span><span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

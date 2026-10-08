@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Health Enrollment | EliEmma Health</title>
+<meta name="description" content="Begin a home health enrollment enquiry with EliEmma Health.">
+<link rel="icon" type="image/png" href="../assets/images/logo-transparent.png?v=3">
+<meta name="theme-color" content="#07356f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand" aria-label="EliEmma Health — home"><img src="../assets/images/logo.png" alt="EliEmma Health logo" width="190" height="60"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main" class="application-page">
+  <section class="page-hero application-hero application-enroll-hero">
+    <div class="container reveal in">
+      <span class="eyebrow page-hero-eyebrow">Home Health Service · Enroll Now</span>
+      <h1>Start a conversation about the right care</h1>
+      <p>Share a few details and our team will contact you to understand your needs and discuss a suitable home health plan.</p>
+      <div class="application-hero-points" aria-label="Home health enrollment benefits"><span>Personalised care planning</span><span>Family-centred support</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container application-layout">
+      <aside class="application-intro reveal reveal-left">
+        <span class="eyebrow" style="color:#bfe3a8">A thoughtful first step</span>
+        <h2>Care designed around your family</h2>
+        <p>We will review your information with care, then help you understand the most appropriate support, setting and schedule.</p>
+        <ul>
+          <li>Personalised home health guidance</li>
+          <li>Clear next steps from a coordinated team</li>
+          <li>Respectful support for families and caregivers</li>
+        </ul>
+      </aside>
+
+      <div class="application-form-card reveal reveal-right">
+        <h2>Home Health Enrollment</h2>
+        <p>Complete the form below. Fields marked * are required.</p>
+        <form id="enrollForm" class="application-form" data-formspree-form action="https://formspree.io/f/mvkzpjlk" method="POST" novalidate data-subject="New Home Health enrollment — EliEmma Health" data-autoresponse="Thank you for your Home Health enrollment enquiry. EliEmma Health has received your information and will contact you as soon as possible." data-success="Your enrollment enquiry has been submitted successfully. EliEmma Health will review your information and contact you as soon as possible.">
+          <section class="application-section">
+            <div class="application-section-title"><h3>Your details</h3><p>Tell us how to reach you.</p></div>
+            <div class="field-grid">
+              <div class="field"><label for="enroll-name">First and last name *</label><input id="enroll-name" name="name" autocomplete="name" required><p class="field-error">Please enter your full name.</p></div>
+              <div class="field"><label for="enroll-phone">Telephone *</label><input id="enroll-phone" name="telephone" type="tel" autocomplete="tel" required><p class="field-error">Please enter a telephone number.</p></div>
+              <div class="field full"><label for="enroll-address">Address *</label><input id="enroll-address" name="address" autocomplete="street-address" required><p class="field-error">Please enter your address.</p></div>
+              <div class="field full"><label for="enroll-email">Email address *</label><input id="enroll-email" name="email" type="email" autocomplete="email" required><p class="field-error">Please enter a valid email address.</p></div>
+            </div>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Where support is needed</h3><p>Choose the location closest to you.</p></div>
+            <div class="field-grid">
+              <div class="field"><label for="state">State in Nigeria *</label><select id="state" name="state" required><option value="">Select state</option></select><p class="field-error">Please select a state.</p></div>
+              <div class="field"><label for="city">City or town *</label><select id="city" name="city" required disabled><option value="">Select city or town</option></select><p class="field-error">Please select a city or town.</p></div>
+              <div class="field full"><label for="care_setting">Care setting *</label><select id="care_setting" name="care_setting" required><option value="">Select a care setting</option><option>EliEmma Center</option><option>My own Home</option></select><p class="field-error">Please choose a care setting.</p></div>
+              <div class="field full conditional-field" id="care_schedule_wrap" hidden><label for="care_schedule">Choose a schedule *</label><select id="care_schedule" name="care_schedule"><option value="">Select schedule</option><option>Full time</option><option>Part time</option></select><p class="field-error">Please choose full time or part time.</p></div>
+            </div>
+          </section>
+
+          <section class="application-section">
+            <div class="application-section-title"><h3>Care context</h3><p>This helps us prepare for the conversation.</p></div>
+            <div class="field-grid">
+              <div class="field full"><label for="relationship">What is your relationship to the patient? *</label><select id="relationship" name="relationship_to_patient" required><option value="">Select relationship</option><option>Self</option><option>Parent</option><option>Child</option><option>Spouse or partner</option><option>Relative</option><option>Friend or caregiver</option><option>Other</option></select><p class="field-error">Please select a relationship.</p></div>
+              <div class="field full"><label for="enroll-message">Additional information</label><textarea id="enroll-message" name="additional_information" rows="5" placeholder="Tell us anything important about the support needed."></textarea></div>
+            </div>
+          </section>
+
+          <div class="field consent"><input id="enroll-consent" name="consent" value="yes" type="checkbox" required><label for="enroll-consent">I consent to EliEmma Health using these details to respond to my enrollment enquiry. *</label></div>
+          <p class="field-error" style="margin-top:.3rem">Please provide consent before submitting.</p>
+          <div class="application-submit"><button type="submit" class="btn btn-primary">Submit enrollment enquiry</button></div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-mid">
+        <img src="../assets/images/logo-transparent.png" alt="EliEmma Health logo" width="180" height="57">
+        <p>Compassionate, professional home healthcare across Lagos, Nigeria.</p>
+        <span class="footer-label">Follow our journey</span>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@eliemmahealth" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2.2 1.8 3.7 4.1 3.9v3c-1.6 0-3-.5-4.1-1.3v6.4c0 3.9-2.7 6.5-6.3 6.5-3.4 0-6-2.4-6-5.7 0-3.4 2.9-5.9 6.5-5.6v3.1c-1.8-.4-3.4.7-3.4 2.5 0 1.5 1.2 2.6 2.8 2.6 1.8 0 3.1-1.3 3.1-3.5V3h3.3z"/></svg></a>
+          <a href="https://www.instagram.com/eliemmahealth/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.7 1.6 4.8 4.8.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.5 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.7-1.6-4.8-4.8C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.5 4 4 2.5 7.2 2.4 8.4 2.3 8.8 2.2 12 2.2z"/></svg></a>
+          <a href="https://wa.me/2349133972821" aria-label="Chat with us on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-right"><span class="footer-label">Care that moves with you</span><blockquote class="footer-quote"><p>“Care at home. Confidence in caregiving. Better health for every family.”</p><cite>— EliEmma Health</cite></blockquote><p class="footer-services">Home health · caregiver education · clinical research</p></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copyright">&copy; <span data-year></span> EliEmma Health. All rights reserved.</span><span>Compassionate care · Professional support · Healthier communities</span><span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
